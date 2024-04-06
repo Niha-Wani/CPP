@@ -14,7 +14,7 @@ class array
 			{
 				cin>>ar[i];
 			}
-			}	
+		}	
 			int insertarray()
 			{
 				cout<<"Enter the position you want to insert"<<endl;
@@ -33,6 +33,7 @@ class array
 					for(i=0;i<size+1;i++)
 					{
 						cout<<ar[i];
+						cout<<" ";
 					}
 				}
 };
