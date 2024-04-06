@@ -49,7 +49,7 @@ void matrix::getmatrix()
 }
 void matrix::subtraction()
 {
-	cout<<"The subraction of M1 and M2 is"<<endl;
+	cout<<endl<<"The subraction of M1 and M2 is"<<endl;
 	for(i=0;i<size;i++)
 	{
 		for(j=0;j<size;j++)
