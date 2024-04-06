@@ -1,2 +1,1 @@
-# CPP
-C++ Starter Pack
+# C++ Beginner's Starter Pack
