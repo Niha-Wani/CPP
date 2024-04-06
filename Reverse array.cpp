@@ -28,7 +28,7 @@ class array{
 		}
 		void display()
 		{
-			cout<<"The array elements after reversal are"<<endl;
+			cout<<"The array elements are"<<endl;
 			for(i=0;i<size;i++)
 			{
 				cout<<ar[i]<<endl;
