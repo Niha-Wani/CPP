@@ -14,7 +14,7 @@ class array{
 			cin>>ar[i];
 		}
 		return 0;
-		}
+	}
 		int reverse()
 		{
 			for(i=0,j=size-1;i<size/2;i++,j--)
@@ -28,11 +28,12 @@ class array{
 		}
 		void display()
 		{
-			cout<<"The array elements are"<<endl;
+			cout<<"The array elements after reversal are"<<endl;
 			for(i=0;i<size;i++)
 			{
 				cout<<ar[i]<<endl;
 			}
+			cout<<endl;
 		}
 };
 int main()
