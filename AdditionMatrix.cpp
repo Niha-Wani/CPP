@@ -26,7 +26,6 @@ void matrix::getmatrix()
 		for(j=0;j<size;j++)
 		{
 			cout<<M1[i][j]<<ends;
-			cout<<" ";
 		}
 	}
 	cout<<endl<<"Enter the size of matrix"<<endl;
@@ -50,7 +49,7 @@ void matrix::getmatrix()
 }
 void matrix::addition()
 {
-	cout<<"The addition of M1 and M2 is"<<endl;
+	cout<<endl<<"The addition of M1 and M2 is"<<endl;
 	for(i=0;i<size;i++)
 	{
 		for(j=0;j<size;j++)
