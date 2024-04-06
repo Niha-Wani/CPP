@@ -26,6 +26,7 @@ void matrix::getmatrix()
 		for(j=0;j<size;j++)
 		{
 			cout<<M1[i][j]<<ends;
+			cout<<" ";
 		}
 	}
 	cout<<endl<<"Enter the size of matrix"<<endl;
