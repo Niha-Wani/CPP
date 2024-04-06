@@ -10,7 +10,7 @@ class matrix{
 };
 void matrix::getmatrix()
 {
-	cout<<"Enter the size of matrix"<<endl;
+	cout<<"Enter the size of matrix M1"<<endl;
 	cin>>size;
 	cout<<"Enter the elements for M1"<<endl;
 	for(i=0;i<size;i++)
@@ -28,7 +28,7 @@ void matrix::getmatrix()
 			cout<<M1[i][j]<<ends;
 		}
 	}
-	cout<<endl<<"Enter the size of matrix"<<endl;
+	cout<<endl<<"Enter the size of matrix M2"<<endl;
 	cin>>size;
 	cout<<"Enter the elements for M2"<<endl;
 	for(i=0;i<size;i++)
