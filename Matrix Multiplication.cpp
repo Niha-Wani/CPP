@@ -69,6 +69,7 @@ void matrix::display()
 		for(j=0;j<size;j++)
 		{
 			cout<<Mul[i][j];
+			cout<<" ";
 		}
 	}
 }
