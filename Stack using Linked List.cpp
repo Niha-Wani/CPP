@@ -60,7 +60,7 @@ void display()
 	struct node *ptr=top;
 	while(ptr!=NULL)
 	{
-		cout<<ptr->data<<endl;
+		cout<<ptr->data<<ends;
 		ptr=ptr->link;
 	}
 }
@@ -86,8 +86,7 @@ int main()
 			break;
 			case 5: flag=0;
 			break;
-        }
+                }
 	}
 	return 0;
 }
-
