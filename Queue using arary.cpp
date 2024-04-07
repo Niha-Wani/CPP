@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 int size=7;
-//#define size 100
 class qarray{
 	private:
 		int queue[7];
@@ -69,7 +68,6 @@ void qarray::display(){
 			cout<<queue[i];
 		}
 	}
-	
 }
 int qarray::getfront(){
 	if(isempty()){
@@ -102,10 +100,8 @@ int main(){
 			case 5: flag=0;
 			break;
 			default : cout<<"Invalid case"<<endl;
-			break;
-			
+			break;		
 		}
 	}
 	return 0;
-	
 }
