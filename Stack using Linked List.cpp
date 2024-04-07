@@ -46,7 +46,7 @@ void showTop()
 	}
 	else
 	{
-		cout<<"The top of the stack is"<<top->data<<endl;
+		cout<<"The top of the stack is "<<top->data<<endl;
 	}
 }
 void display()
