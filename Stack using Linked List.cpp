@@ -10,8 +10,7 @@ bool isEmpty()
 {
 	if(top==NULL)
 	{
-		cout<<"Stack is empty"<<endl;
-	return true;
+        	return true;
 	}
 	else
 	{
