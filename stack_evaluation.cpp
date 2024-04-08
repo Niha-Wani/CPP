@@ -52,6 +52,7 @@ int main()
     string x;	
     cout<<"Enter the postfix expression you want to evaluate "<<endl;
     cin>>x;
+    cout<<"The postfix evaluation is "; 
     cout<<postfixEvaluation(x)<<endl;
     return 0;
 }
