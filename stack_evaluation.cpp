@@ -49,8 +49,10 @@ int postfixEvaluation(string s)                                               //
 }
 int main()
 {
-	cout<<"Postfix Evalvation is "<<endl;
-    cout<<postfixEvaluation("6523+8*+3+*")<<endl;
+    string x;	
+    cout<<"Enter the postfix expression you want to evaluate "<<endl;
+    cin>>x;
+    cout<<postfixEvaluation(x)<<endl;
     return 0;
 }
 
