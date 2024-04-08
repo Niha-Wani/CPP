@@ -6,15 +6,18 @@ struct node{
 	node *rightchild;
 	node *create();
 };
-node *create(){
+node *create()
+{
 	int x;
 	node *temp=new node;
 	cout<<"Enter the data"<<endl;
 	cin>>x;
-	if(x==-1){
+	if(x==-1)
+	{
 		return 0;
 	}
-	else{
+	else
+	{
 		temp->data=x;
 		cout<<"Enter the left child of "<<x<<" and press -1 for no child"<<endl;
 		temp->leftchild=create();
@@ -23,40 +26,49 @@ node *create(){
 		return temp;
 	}
 }
-	void preorder(node *temp){
+	void preorder(node *temp)
+{
 		if(temp==NULL)
 		return;
-		else{
+		else
+		{
 			cout<<temp->data;
 			preorder(temp->leftchild);
 			preorder(temp->rightchild);
 		}	
-	}
-	void inorder(node *temp){
+}
+	void inorder(node *temp)
+{
 		if(temp==NULL)
 		return;
-		else{
+		else
+		{
 			inorder(temp->leftchild);
 			cout<<temp->data;
 			inorder(temp->rightchild);
 		}
-	}
-	void postorder(node *temp){
+}
+	void postorder(node *temp)
+{
 		if(temp==NULL)
 		return;
-		else{
+		else
+		{
 			postorder(temp->leftchild);
 			postorder(temp->rightchild);
 			cout<<temp->data;
 		}
-	}
-int main(){
+}
+int main()
+{
 	int flag=1,choice;
 	node *temp;
-	while(flag==1){
+	while(flag==1)
+	{
 		cout<<" Enter your choice:  1.CREATION 2.PREORDER 3.INORDER 4.POSTORDER 5.EXIT "<<endl;
 		cin>>choice;
-		switch(choice){
+		switch(choice)
+		{
 			case 1: temp=create();
 			break;
 			case 2: preorder(temp);
