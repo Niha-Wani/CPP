@@ -5,35 +5,45 @@ struct node{
 	node *leftchild;
 	node *rightchild;
 };
-node *create(int value){
+node *create(int value)
+{
 	node *temp=new node;
 	temp->data=value;
 	temp->leftchild=temp->rightchild=NULL;
 	return temp;
 }
-node *insert(node *root,int value){
-	if(root==NULL){
+node *insert(node *root,int value)
+{
+	if(root==NULL)
+	{
 		return create(value);
 	}
-	else if(value<root->data){
+	else if(value<root->data)
+	{
 		root->leftchild=insert(root->leftchild,value);
 	}
-	else{
+	else
+	{
 		root->rightchild=insert(root->rightchild,value);
 	}
 	return root;
 }
-bool search(node *root,int value){
-	if(root==NULL){
+bool search(node *root,int value)
+{
+	if(root==NULL)
+	{
 		return false;
 	}
-	else if(root->data==value){
+	else if(root->data==value)
+	{
 		return true;
 	}
-	else if(value< root->data){
+	else if(value< root->data)
+	{
 		return search(root->leftchild,value);
 	}
-	else{
+	else
+	{
 		return search(root->rightchild,value);
 	}
 }
