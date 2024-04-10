@@ -62,8 +62,7 @@ void queue::deletion()
 		nodequeue *ptr=front;
 		front=front->link;
 		cout<<"The deleted element is "<<ptr->data<<endl;
-		delete(ptr);
-		
+		delete(ptr);		
 	}
 }
 void queue::showfront()
@@ -109,10 +108,12 @@ int main()
 {
      queue obj;
 	int choice,val,flag=1;
-	while(flag==1){
+	while(flag==1)
+	{
 		cout<<endl<<"Enter your choice: 1.INSERT 2.DELETE 3.DISPLAY 4.SHOWFRONT 5.SHOWREAR 6.EXIT "<<endl;
 		cin>>choice;
-		switch(choice){
+		switch(choice)
+		{
 			case 1: cout<<"Enter the value"<<endl;
 			cin>>val;
 			obj.insert(val);
@@ -131,5 +132,5 @@ int main()
 			break;
 		}
 	}
-	return 0;
+    return 0;
 }
