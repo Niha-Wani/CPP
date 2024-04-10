@@ -1,25 +1,26 @@
 #include<iostream>
 using namespace std;
-class matrix{
+class matrix
+{
 	private:
 		int M1[3][3],M2[3][3],Mul[3][3],i,j,k,size;
-		public:
-			void getmatrix();
-			void multiplication();
-			void display();
+	public:
+		void getmatrix();
+		void multiplication();
+		void display();
 };
 void matrix::getmatrix()
 {
 	cout<<"Enter the size for M1"<<endl;
 	cin>>size;
 	cout<<"Enter the elements for M1"<<endl;
-		for(i=0;i<size;i++)
+	for(i=0;i<size;i++)
+	{
+	      for(j=0;j<size;j++)
 		{
-			for(j=0;j<size;j++)
-			{
-				cin>>M1[i][j];
-			}
+	        	cin>>M1[i][j];
 		}
+	}
 		cout<<"The elements of matrix M1 are"<<endl;
 		for(i=0;i<size;i++)
 		{
