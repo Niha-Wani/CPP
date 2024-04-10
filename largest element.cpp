@@ -1,9 +1,10 @@
 #include<iostream>
 using namespace std;
-class array{
+class array
+{
     private:
 	int ar[50],i,size;
-	public:
+    public:
 	int getarray()
 	{
 		cout<<"Enter the size of array"<<endl;
@@ -14,7 +15,7 @@ class array{
 			cin>>ar[i];
 		}
 		return 0;
-		}
+	}
 		 int largest()
 		 {
 		 	for(i=1;i<size;i++)
