@@ -1,12 +1,13 @@
 #include<iostream>
 using namespace std;
-class matrix{
+class matrix
+{
 	private:
 		int M1[3][3],M2[3][3],Sub[3][3],i,j,size;
-		public:
-			void getmatrix();
-			void dispaly();
-			void subtraction();
+        public:
+		void getmatrix();
+                void dispaly();
+		void subtraction();
 };
 void matrix::getmatrix()
 {
