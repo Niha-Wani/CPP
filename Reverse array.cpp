@@ -4,10 +4,10 @@ class array
 {
     private:
 	int ar[50],i,temp,j,size;
-	public:
+    public:
 	int getarray()
 	{
-		cout<<"Enter the size of array"<<endl;
+	        cout<<"Enter the size of array"<<endl;
 		cin>>size;
 		cout<<"Enter the elements"<<endl;
 		for(i=0;i<size;i++)
@@ -16,24 +16,24 @@ class array
 		}
 		return 0;
 	}
-		int reverse()
+	int reverse()
+	{
+		for(i=0,j=size-1;i<size/2;i++,j--)
 		{
-			for(i=0,j=size-1;i<size/2;i++,j--)
-			{
-				temp=ar[i];
-				ar[i]=ar[j];
-				ar[j]=temp;
-			}
+			temp=ar[i];
+			ar[i]=ar[j];
+			ar[j]=temp;
+		}
 			cout<<"Array reversed successfully"<<endl;
 			return 0;
-		}
-		void display()
+	}
+	void display()
+        {
+		cout<<"The array elements are"<<endl;
+		for(i=0;i<size;i++)
 		{
-			cout<<"The array elements are"<<endl;
-			for(i=0;i<size;i++)
-			{
-				cout<<ar[i]<<endl;
-			}
+			cout<<ar[i]<<endl;
+		}
 			cout<<endl;
 		}
 };
