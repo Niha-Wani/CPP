@@ -1,29 +1,33 @@
 #include<iostream>
 using namespace std;
 int size=7;
-class qarray{
+class qarray
+{
 	private:
-		int queue[7];
-		 int front=-1;
-		 int rear=-1;
-		public:
-			void insert(int val);
-			int deletion();
-			bool isfull();
-			bool isempty();
-			void display();
-			int getfront();
+	    int queue[7];
+            int front=-1;
+            int rear=-1;
+	public:
+	    void insert(int val);
+            int deletion();
+	    bool isfull();
+	    bool isempty();
+	    void display();
+	    int getfront();
 };
-bool qarray::isempty(){
+bool qarray::isempty()
+{
 	if(front==-1 || front>rear)
 	{
 		return true;
 	}
-	else{
+	else
+	{
 		return false;
 	}
 }
-bool qarray::isfull(){
+bool qarray::isfull()
+{
 	if(rear==size-1)
 	{
 		return true;
@@ -31,8 +35,10 @@ bool qarray::isfull(){
 	else 
 	return false;
 }
-void qarray::insert(int val){
-	if(isfull()){
+void qarray::insert(int val)
+{
+	if(isfull())
+	{
 		cout<<"Queue is full"<<endl;
 	}
 	else if(isempty())
@@ -41,23 +47,29 @@ void qarray::insert(int val){
 		rear++;
 		queue[rear]=val;
 	}
-	else{
+	else
+	{
 		rear++;
 		queue[rear]=val;
 	}
 }
-int qarray::deletion(){
-	if(isempty()){
+int qarray::deletion()
+{
+	if(isempty())
+	{
 		cout<<"Queue is empty"<<endl;
 	}
-	else{
+	else
+	{
 		int p=queue[front];
 		front++;
 		return p;
 	}
 }
-void qarray::display(){
-	if(isempty()){
+void qarray::display()
+{
+	if(isempty())
+	{
 		cout<<"Queue is empty"<<endl;
 	}
 	else
@@ -69,23 +81,29 @@ void qarray::display(){
 		}
 	}
 }
-int qarray::getfront(){
-	if(isempty()){
+int qarray::getfront()
+{
+	if(isempty())
+	{
 		cout<<"Queue is empty"<<endl;
 	}
-	else{
+	else
+	{
 		int p;
 		p=queue[front];
 		cout<<"The element at front is "<<p;
 	}
 }
-int main(){
+int main()
+{
 	qarray obj;
 	int choice,val,flag=1;
-	while(flag==1){
+	while(flag==1)
+	{
 		cout<<endl<<"Enter your choice: 1.INSERT 2.DELETE 3.DISPLAY  4.GETFRONT 5.EXIT"<<endl;
 		cin>>choice;
-		switch(choice){
+		switch(choice)
+		{
 			case 1: cout<<"Enter the value"<<endl;
 			cin>>val;
 			obj.insert(val);
