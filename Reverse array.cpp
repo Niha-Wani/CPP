@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-class array{
+class array
+{
     private:
 	int ar[50],i,temp,j,size;
 	public:
