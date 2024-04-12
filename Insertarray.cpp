@@ -3,20 +3,20 @@ using namespace std;
 class array
 {
 	private:
-		int ar[70],size,pos,element,i;
-		public:
-		int getarray()
+	   int ar[70],size,pos,element,i;
+	public:
+	  int getarray()
+	{
+	     cout<<"Enter the size of array"<<endl;
+	     cin>>size;
+	     cout<<"Enter the elements"<<endl;
+	     for(i=0;i<size;i++)
 		{
-			cout<<"Enter the size of array"<<endl;
-			cin>>size;
-			cout<<"Enter the elements"<<endl;
-			for(i=0;i<size;i++)
-			{
-				cin>>ar[i];
-			}
-		}	
-			int insertarray()
-			{
+			cin>>ar[i];
+		}
+	 }	
+	   int insertarray()
+	{
 				cout<<"Enter the position you want to insert"<<endl;
 				cin>>pos;
 				cout<<"Enter the element"<<endl;
