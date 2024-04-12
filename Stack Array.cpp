@@ -1,17 +1,17 @@
 #include<iostream>
 using namespace std;
 int top,cap=6;
-class stack{
-	private:
-		int ar[50];
-		public:
-			stack();
-		    void push(int item);
-			int pop();
-			void display();
-			int peek();
-			int size();
-			
+class stack
+{
+     private:
+       int ar[50];
+     public:
+        stack();
+        void push(int item);
+        int pop();
+        void display();
+        int peek();
+        int size();		
 };
 stack::stack()
 {
