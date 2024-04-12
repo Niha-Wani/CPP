@@ -16,26 +16,26 @@ class array
 		}
 	 }	
 	   int insertarray()
-	{
-				cout<<"Enter the position you want to insert"<<endl;
-				cin>>pos;
-				cout<<"Enter the element"<<endl;
-				cin>>element;
-				for(i=size-1;i>=pos;i--)
-				{
-					ar[i+1]=ar[i];
-			    }
-			    ar[pos]=element;
-				}
-				void display()
-				{
-					cout<<"The new elements are"<<endl;
-					for(i=0;i<size+1;i++)
-					{
-						cout<<ar[i];
-						cout<<" ";
-					}
-				}
+           {
+         	cout<<"Enter the position you want to insert"<<endl;
+		cin>>pos;
+		cout<<"Enter the element"<<endl;
+		cin>>element;
+		for(i=size-1;i>=pos;i--)
+		{
+	        	ar[i+1]=ar[i];
+	        }
+		        ar[pos]=element;
+	   }
+	    void display()
+	     {
+		  cout<<"The new elements are"<<endl;
+		  for(i=0;i<size+1;i++)
+		     {
+			cout<<ar[i];
+		        cout<<" ";
+		     }
+	     }
 };
 int main()
 {
@@ -45,4 +45,3 @@ int main()
 	obj.display();
 	return 0;
 }
-
