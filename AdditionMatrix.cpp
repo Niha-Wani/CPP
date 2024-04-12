@@ -1,12 +1,13 @@
 #include<iostream>
 using namespace std;
-class matrix{
-	private:
-		int M1[3][3],M2[3][3],Add[3][3],i,j,size;
-		public:
-			void getmatrix();
-			void dispaly();
-			void addition();
+class matrix
+{
+     private:
+	int M1[3][3],M2[3][3],Add[3][3],i,j,size;
+     public:
+	void getmatrix();
+        void dispaly();
+        void addition();
 };
 void matrix::getmatrix()
 {
