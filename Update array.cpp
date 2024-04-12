@@ -3,19 +3,19 @@ using namespace std;
 class array
 {
 	private:
-		int ar[50],size,i,j,index;
-		public:
-			int getarray()
-			{
-				cout<<"Enter the size of array"<<endl;
-				cin>>size;
-				cout<<"Enter the elements"<<endl;
-				for(i=0;i<size;i++)
-				{
-					cin>>ar[i];
-				}
-				return 0;
-			}
+	   int ar[50],size,i,j,index;
+	public:
+	   int getarray()
+	   {
+		cout<<"Enter the size of array"<<endl;
+		cin>>size;
+		cout<<"Enter the elements"<<endl;
+		for(i=0;i<size;i++)
+		{
+		    cin>>ar[i];
+		}
+  		return 0;
+	   }
 			void update()
 			{
 				cout<<"Enter the index you want to update"<<endl;
