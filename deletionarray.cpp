@@ -45,13 +45,13 @@ class array
 					cout<<"Element deleted successfully"<<endl;
 				}
 			}
-			void display()
-			{
-				for(i=0;i<size-1;i++)
-				{
-					cout<<ar[i];
-				}
+		void display()
+		{
+		    for(i=0;i<size-1;i++)
+         		{
+		           cout<<ar[i];
 			}
+		}
 };
 int main()
 {
@@ -60,4 +60,4 @@ int main()
 	obj.deletion();
 	obj.display();
 	return 0;
-       }
+}
