@@ -16,16 +16,16 @@ class array
 		}
   		return 0;
 	   }
-			void update()
-			{
-				cout<<"Enter the index you want to update"<<endl;
-				cin>>index;
-				if(index<0 || index>size)
-				{
-					cout<<"Invalid index"<<endl;
-				}
-				else
-				{
+	   void update()
+	    {
+		cout<<"Enter the index you want to update"<<endl;
+		cin>>index;
+		if(index<0 || index>size)
+		{
+	        	cout<<"Invalid index"<<endl;
+		}
+		else
+		{
 					cout<<"Enter the value you want to insert"<<endl;
 					cin>>ar[index];
 					cout<<"Array updated successfully"<<endl;
