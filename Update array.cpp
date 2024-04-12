@@ -26,19 +26,19 @@ class array
 		}
 		else
 		{
-					cout<<"Enter the value you want to insert"<<endl;
-					cin>>ar[index];
-					cout<<"Array updated successfully"<<endl;
-				}
+		       cout<<"Enter the value you want to insert"<<endl;
+			cin>>ar[index];
+			cout<<"Array updated successfully"<<endl;
+		}
+	     }
+	     void display()
+               {
+		        cout<<"The array elements are"<<endl;
+	        	for(i=0;i<size;i++)
+			   {
+				cout<<ar[i]<<endl;
 			}
-			void display()
-			{
-				cout<<"The array elements are"<<endl;
-				for(i=0;i<size;i++)
-				{
-					cout<<ar[i]<<endl;
-				}
-			}
+ 		}
 };
 int main()
 {
