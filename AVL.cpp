@@ -123,7 +123,7 @@ int main()
 	cout<<"Enter the value"<<endl;
 	cin>>value;
 	root=insert(root,value);
-	cout<<"The inorder traversal is"<<endl;
+	cout<<"The inorder traversal is"<<endl;// in order traversal
 	inorder(root);
 	return 0;
 }
