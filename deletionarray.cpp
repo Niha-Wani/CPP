@@ -7,7 +7,7 @@ class array
 	public:
             int getarray()
             {
-		cout<<"Enter the size of array"<<endl;
+		cout<<"Enter the size of array"<<endl;// size of the array
 		cin>>size;
 		cout<<"Enter the elements"<<endl;
 		for(i=0;i<size;i++)
