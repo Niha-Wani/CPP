@@ -14,19 +14,19 @@ class array
 		{
 			cin>>ar[i];
 		}
-		return 0;
+	  return 0;
 	}
 		 int largest()
 		 {
 		 	for(i=1;i<size;i++)
 		 	{
-		 		if(ar[0]<ar[i])
-		 		{
-		 			ar[0]=ar[i];
-				 }
+		 	     if(ar[0]<ar[i])
+		 	     {
+		 		ar[0]=ar[i];
+			      }
 			 }
-			 cout<<"The largest element is "<<ar[0]<<endl;
-			 return 0;
+		 cout<<"The largest element is "<<ar[0]<<endl;
+	         return 0;
 		 }
 		void display()
 		{
