@@ -63,7 +63,7 @@ void  AddAtBegining(struct list **base)
 {
     struct list *n,*temp;
     n=(struct list*)malloc(sizeof(struct list));
-    cout<<"Enter Data:";
+    cout<<"Enter Data";
     cin>>n->data ;
     n->next=*base;
     *base=n;
@@ -81,22 +81,22 @@ void delete_atAnywhere(struct list **base)
     struct list *temp, *prev;
 	if(*base==NULL )
 	{
-	 	cout<<"list empty:";
+	 	cout<<"list empty";
         }
-    else 
-    {
-        cout<<"Enter position you want to delete :";
+         else 
+        {
+        cout<<"Enter position you want to delete ";
         cin>>p;
-        if (p==1)
+        if(p==1)
         {
             temp=*base;
             *base = temp->next;
-            free (temp);
+            free(temp);
         }
         else
         {
             temp=*base;
-            while(p>1& temp!=NULL)
+            while(p>1 & temp!=NULL)
             {
                 prev=temp;
                 temp=temp->next;
@@ -118,7 +118,7 @@ void reverse(struct list **base)
         temp=r;
     }
     *base=p;
-}
+ }
 int main()
 {
     int c;
@@ -151,7 +151,7 @@ int main()
         else if(c==6)
 	{
             int p;
-            cout<<"Enter Postion: ";
+            cout<<"Enter Postion ";
             cin>>p;
             delete_atAnywhere(&base);
         }
