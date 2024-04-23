@@ -6,21 +6,21 @@ struct list
     int data;
     struct list *next;
 };
-void add (struct list **base)
+void add(struct list **base)
 {
     struct list *n ,*temp;
     n=(struct list*)malloc(sizeof(struct list));
     cout<<"Enter Data:";
     cin>>n->data;
     n->next=NULL;
-    if (*base==NULL)
+    if(*base==NULL)
     {
         *base=n;
     }
     else
     {
         temp=*base;
-        while (temp->next!=NULL)
+        while(temp->next!=NULL)
 	{
             temp=temp->next;
         }
@@ -29,7 +29,7 @@ void add (struct list **base)
 }
 void display(struct list *base)
 {
-    if (base ==NULL)
+    if (base==NULL)
     {
         cout<<"List is Empty::";
     }
@@ -42,16 +42,16 @@ void display(struct list *base)
         }
     }
 }
-void count (struct list *base)
+void count(struct list *base)
 {
     int c=0;
-    if (base == NULL)
+    if (base== NULL)
     {
         cout<<"The List Is Empty";
     }
     else
     {
-        while (base!=NULL)
+        while(base!=NULL)
 	{
             base=base->next;
             c++;
@@ -96,7 +96,7 @@ void delete_atAnywhere(struct list **base)
         else
         {
             temp=*base;
-            while (p>1& temp!=NULL)
+            while(p>1& temp!=NULL)
             {
                 prev=temp;
                 temp=temp->next;
@@ -110,7 +110,7 @@ void reverse(struct list **base)
     struct list *temp,*p,*q,*r;
     p== NULL;
     temp=*base;
-    while (temp!=NULL)
+    while(temp!=NULL)
     {
         r=temp->next;
         temp->next=p;
@@ -123,17 +123,17 @@ int main()
 {
     int c;
     struct list *base=NULL;
-    while (1)
+    while(1)
     {
         cout<<"<1>add<2>display<3>count<4>add at beging<5>delete at begining<6>delete anywhere<7>reverse the numbers";
         cin>>c;
-        if (c==1)
+        if(c==1)
 	{
             add(&base);
         }
         else if(c==2)
 	{
-            display (base);
+            display(base);
 
         }
         else if(c==3)
@@ -151,7 +151,7 @@ int main()
         else if(c==6)
 	{
             int p;
-            cout<<"Enter Postion:";
+            cout<<"Enter Postion: ";
             cin>>p;
             delete_atAnywhere(&base);
         }
@@ -159,6 +159,5 @@ int main()
 	{
             reverse(&base);
         }
-        
     }
 }
