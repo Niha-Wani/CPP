@@ -28,7 +28,7 @@ void add_at_rear(struct queue **base)
         }
         temp->next=n;
     }
-    cout<<"Element"<<" "<<n->data<<" "<<"has been added:";
+cout<<"Element"<<" "<<n->data<<" "<<"has been added";
 }
 void delete_at_front(struct queue **base)
 {
