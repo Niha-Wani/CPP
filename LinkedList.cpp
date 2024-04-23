@@ -102,10 +102,7 @@ void delete_atAnywhere(struct list **base)
                 temp=temp->next;
                 p++;
             }
-        } 
-          
-	 	
-            
+        }             
     }
 }
 void reverse(struct list **base)
@@ -130,33 +127,38 @@ int main()
     {
         cout<<"<1>add<2>display<3>count<4>add at beging<5>delete at begining<6>delete anywhere<7>reverse the numbers";
         cin>>c;
-        if (c==1){
+        if (c==1)
+	{
             add(&base);
         }
-        else if(c==2){
+        else if(c==2)
+	{
             display (base);
 
         }
-        else if(c==3){
+        else if(c==3)
+	{
             count(base);
         }
-        else if(c==4){
+        else if(c==4)
+	{
             AddAtBegining(&base);
         }
-        else if(c==5){
+        else if(c==5)
+	{
             delete_atBegin(&base);
         }
-        else if(c==6){
+        else if(c==6)
+	{
             int p;
             cout<<"Enter Postion:";
             cin>>p;
             delete_atAnywhere(&base);
         }
-        else if (c==7){
+        else if (c==7)
+	{
             reverse(&base);
         }
         
     }
-   
 }
-
