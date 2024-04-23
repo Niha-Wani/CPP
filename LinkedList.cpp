@@ -1,7 +1,8 @@
 #include<iostream>
 #include<stdio.h>
 using namespace std;
-struct list{
+struct list
+{
     int data;
     struct list *next;
 
@@ -13,27 +14,28 @@ void add (struct list **base)
     cout<<"Enter Data:";
     cin>>n->data;
     n->next=NULL;
-    if (*base==NULL){
+    if (*base==NULL)
+    {
         *base=n;
-
     }
-    else {
+    else
+    {
         temp=*base;
         while (temp->next!=NULL){
             temp=temp->next;
         }
-        temp->next=n;
-       
-        
+        temp->next=n;    
     }
 }
 void display(struct list *base){
-    if (base ==NULL){
+    if (base ==NULL)
+    {
         cout<<"List is Empty::";
-
     }
-    else{
-        while(base!=NULL){
+    else
+    {
+        while(base!=NULL)
+	{
             cout<<" "<<base->data;
             base=base->next;
         }
@@ -43,34 +45,31 @@ void display(struct list *base){
 void count (struct list *base)
 {
     int c=0;
-    if (base == NULL){
+    if (base == NULL)
+    {
         cout<<"The List Is Empty";
     }
-    else{
-        while (base!=NULL){
+    else
+    {
+        while (base!=NULL)
+	{
             base=base->next;
             c++;
         }
         cout<<"Number of Elements entered is :"<<c;
     }
-
 }
-void  AddAtBegining(struct list **base){
+void  AddAtBegining(struct list **base)
+{
     struct list *n,*temp;
     n=(struct list*)malloc(sizeof(struct list));
     cout<<"Enter Data:";
     cin>>n->data ;
     n->next=*base;
     *base=n;
-
-    
 }
 void delete_atBegin(struct list **base){
-    
-   
-	  
 	  	struct list *temp;
-     	
   	    temp=*base;
   	    *base=temp->next;
   	    delete temp; 
@@ -79,7 +78,6 @@ void delete_atAnywhere(struct list **base)
 {
     int p;
     struct list *temp, *prev;
-  
 	if(*base==NULL )
 	{
 	 	cout<<"list empty:";
