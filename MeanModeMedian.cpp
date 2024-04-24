@@ -9,7 +9,7 @@ int main()
     int n,i,mode,mode_count;
     cout<<"Enter the number of Integers";
     cin>>n;
-    cout<<"Enter" " "<<n<<" " "intergers, saparated by Spaces:";    //integers serparetdd by spaces
+    cout<<"Enter" " "<<n<<" " "intergers, saparated by Spaces ";    //integers serpareted by spaces
     for(i=0;i<n;i++)
     {
         cin>>number[i];
