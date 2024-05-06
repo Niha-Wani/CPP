@@ -13,7 +13,7 @@ int getheight(node *root)
 	return 0;
 	else
 	{
-		return root->height;
+	  return root->height;
 	}
 }
 int getbf(node *root)
@@ -22,7 +22,7 @@ int getbf(node *root)
 	return 0;
 	else
 	{
-		return getheight(root->lc)-getheight(root->rc);
+	   return getheight(root->lc)-getheight(root->rc);
 	}
 }
 node *create(int value)
@@ -35,13 +35,13 @@ node *create(int value)
 }
 node *rightrotation(node *y)
 {
-	node *x=y->lc;
-	node *t=x->rc;
-        x->rc=y;
-        y->lc=t;
-    y->height=max(getheight(y->lc),getheight(y->rc))+1;
-    x->height=max(getheight(x->lc),getheight(x->rc))+1;
-    return x;
+      node *x=y->lc;
+      node *t=x->rc;
+      x->rc=y;
+      y->lc=t;
+      y->height=max(getheight(y->lc),getheight(y->rc))+1;
+      x->height=max(getheight(x->lc),getheight(x->rc))+1;
+      return x;
 }
 node *leftrotation(node *x)
 {
@@ -59,24 +59,25 @@ node *insert(node *root,int value)
 	return create(value);
 	else if(value<root->data)
 	{
-		root->lc=insert(root->lc,value);
+	   root->lc=insert(root->lc,value);
 	}
 	else if(value>root->data)
 	{
-		root->rc=insert(root->rc,value);
+	   root->rc=insert(root->rc,value);
 	}
 	else
 	{
-		return root;
+	   return root;
 	}
 	root->height=1+max(getheight(root->lc),getheight(root->rc));
 	int bf=getbf(root);
 	if(bf>1 && value<root->lc->data)
 	{
-	return rightrotation(root);
-    }
-	else if(bf<-1 && value>root->rc->data){
-		return leftrotation(root);
+	   return rightrotation(root);
+        }
+	else if(bf<-1 && value>root->rc->data)
+	{
+	   return leftrotation(root);
 	}
 	else if(bf>1 && value>root->lc->data)
 	{
